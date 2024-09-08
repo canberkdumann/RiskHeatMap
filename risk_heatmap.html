@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Risk Heat Map</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="customized-title">Risk Heat Map</h1>
+
+    <div class="heatmap-container">
+        <table>
+            
+            <div class="likelihood-text">
+                <span>LIKELIHOOD</span>
+            </div>
+
+            <div class="heatmap-wrapper">
+            <tr>
+                <td class="medium" data-risk="Medium Risk"></td>
+                <td class="high" data-risk="High Risk"></td>
+                <td class="high" data-risk="High Risk"></td>
+            </tr>
+            <tr>
+                <td class="low" data-risk="Low Risk"></td>
+                <td class="medium" data-risk="Medium Risk"></td>
+                <td class="high" data-risk="High Risk"></td>
+            </tr>
+            <tr>
+                <td class="low" data-risk="Low Risk"></td>
+                <td class="low" data-risk="Low Risk"></td>
+                <td class="medium" data-risk="Medium Risk"></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="impact-text">
+        <span>IMPACT</span>
+    </div>
+
+    <div id="tooltip"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
